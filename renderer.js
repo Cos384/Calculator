@@ -1,6 +1,5 @@
 // renderer.js
 document.getElementById('calculateButton').addEventListener('click', calculateEarnings);
-
 document.addEventListener('DOMContentLoaded', function () {
     const dailyGrowthInput = document.getElementById('dailyGrowth');
 
