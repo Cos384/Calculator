@@ -26,7 +26,7 @@ function calculateEarnings() {
     let dailyGrowthPercentage = document.getElementById('dailyGrowth').value.trim();
 
     if (dailyGrowthPercentage === '') {
-        dailyGrowthPercentage = 0.0254;
+        dailyGrowthPercentage = 0.0228;
     } else {
         dailyGrowthPercentage = parseFloat(dailyGrowthPercentage.replace('%', '')) / 100;
     }
