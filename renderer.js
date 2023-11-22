@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dailyGrowthInput = document.getElementById('dailyGrowth');
 
     // Store the default placeholder value
-    const defaultPlaceholder = 'VIP 1 Default: ≈ 2.567%';
+    const defaultPlaceholder = 'VIP 1 Default: ≈ 2.514%';
 
     // Set the default value for the dailyGrowth input when the page loads
     dailyGrowthInput.placeholder = defaultPlaceholder;
@@ -26,7 +26,7 @@ function calculateEarnings() {
     let dailyGrowthPercentage = document.getElementById('dailyGrowth').value.trim();
 
     if (dailyGrowthPercentage === '') {
-        dailyGrowthPercentage = 0.0228;
+        dailyGrowthPercentage = 0.02514; // Default to 2.28%
     } else {
         dailyGrowthPercentage = parseFloat(dailyGrowthPercentage.replace('%', '')) / 100;
     }

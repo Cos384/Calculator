@@ -1,0 +1,17 @@
+{
+    "name": "COS Calculator",
+    "short_name": "Calculator",
+    "description": "A simple profit calculator",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#333",
+    "theme_color": "#006400",
+    "icons": [
+      {
+        "src": "images/appLogo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
