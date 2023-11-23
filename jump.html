@@ -4,12 +4,12 @@
     <!-- ... other head elements ... -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="manifest.json">
-    
+
 
     <style>
     body {
         font-family: 'Arial', sans-serif;
-        background: url('images/calculators/cos_bg.svg') no-repeat center center fixed;
+        background: url('images/calculators/jump_bg.svg') no-repeat center center fixed;
         background-size: cover;
         margin: 0;
         display: flex;
@@ -62,8 +62,8 @@
         }
 
         button {
-            background: url('images/calculate.gif') center center no-repeat; /* Set the background image */
-            background-size: 200px; /* Constrain the background image to the button size */
+            background: url('images/calculators/jump_button.png') no-repeat; /* Set the background image */
+            background-size: contain; /* Constrain the background image to the button size */
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -71,6 +71,7 @@
             cursor: pointer;
             font-size: 16px;
             background-color: #006400; /* Dark green button background color */
+
         }
 
         input::placeholder {
@@ -112,11 +113,11 @@
 </head>
 <body>
     <div class="header">
-        <img id="logo1" src="images/logo1.png" alt="Logo1">
+        <img id="logo1" src="images/calculators/jump_icon.png" alt="Logo1">
     </div>
 
     <div class="calculator">
-        <h1>Cos384 Profit Calculator</h1>
+        <h1>JumpTD1 Profit Calculator</h1>
 
         <label for="initialAssets">Initial Assets: $USDT</label>
         <input type="number" id="initialAssets" placeholder="E.g. 320" step="0.01" />
@@ -129,6 +130,7 @@
         <input type="text" id="numDays" />
 
         <button id="calculateButton">Calculate Earnings</button>
+        
 
         <p id="totalEarnings">Total Earnings: </p>
         <p id="earnedAmount">Earned Amount: </p>
