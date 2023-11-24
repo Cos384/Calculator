@@ -4,20 +4,28 @@
     <!-- ... other head elements ... -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="manifest.json">
-
+    <title>JumpTD1 Calculator</title>
 
     <style>
+        .background {
+
+        }
     body {
         font-family: 'Arial', sans-serif;
         background: url('images/calculators/jump_bg.svg') no-repeat center center fixed;
-        background-size: cover;
-        margin: 0;
+        background-size: contain;
+        margin: 30px;
+        /* margin-right: 80px; */
+        /* margin-left: 80px; */
+        /* margin-top: 60px; */
+        /* margin-bottom: 1000px; */
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         height: 100vh;
-        color: #fff; /* Light text color */
+        color: #1f2126; /* Light text color */
+        background-image: url(images/calculators/jump_bg.svg);
     }
 
         .header {
@@ -41,7 +49,7 @@
         }
 
         h1 {
-            color: #4bbfb3; /* Dark green for the header */
+            color: #c0d839; /* Dark green for the header */
         }
 
         label {
@@ -62,16 +70,15 @@
         }
 
         button {
-            background: url('images/calculators/jump_button.png') no-repeat; /* Set the background image */
-            background-size: contain; /* Constrain the background image to the button size */
+            background: url('images/calculators/jump_calculate.gif') no-repeat; /* Set the background image */
+            background-size: cover; /* Constrain the background image to the button size */
             color: #fff;
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
-            background-color: #006400; /* Dark green button background color */
-
+            width: px;
         }
 
         input::placeholder {
@@ -84,7 +91,7 @@
 
         #totalEarnings {
             font-size: 18px;
-            color: #009688; /* Teal color for total earnings */
+            color: #d3c332; /* Teal color for total earnings */
             margin-top: 20px;
         }
 
@@ -140,7 +147,7 @@
         <button id="homeButton" onclick="redirectToHome()"></button>
     </div>
 
-    <script src="renderer.js"></script>
+    <script src="logic/jump.js"></script>
     <script>
         // Set default value for the dailyGrowth input when the page loads
         document.addEventListener('DOMContentLoaded', function () {
