@@ -7,113 +7,102 @@
     <title>JumpTD1 Calculator</title>
 
     <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background: url('images/calculators/jump_bg.svg') no-repeat center center fixed;
-        background-size: contain;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; */
-        height: 100vh;
-        /* color: #1f2126; */ /* Light text color */
-        background-image: url(images/calculators/jump_bg.svg);
-    }
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('images/calculators/jump_bg.svg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff; /* Light text color */
+  background-position: center;
+}
 
-        .header {
-            display: flex;
-            align-items: stretch;
-            /* margin-bottom: 10px; */
-            /* offset-position: 100px; */
-            align-content: flex-end;
-        }
+.calculator {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker calculator background color with transparency */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Padding for both mobile and desktop */
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px;
+}
 
-        #logo1 {
-            width: 150px; /* Set the width of your logo1 image */
-            margin-right: 10px;
-        }
+h1 {
+  color: #c0d839; /* Dark green for the header */
+  margin-bottom: 20px;
+}
 
-        .calculator {
-            background-color: #444; /* Darker calculator background color */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px; /* Padding for both mobile and desktop */
-            text-align: center;
-            width: 60%; /* Ensure the calculator takes full width within its container */
-            margin: 100px;
-            margin-right: 80px;
-            margin-left: 80px;
-        }
+label {
+  display: block;
+  margin: 10px 0;
+  color: #ccc; /* Light gray for labels */
+}
 
-        h1 {
-            color: #c0d839; /* Dark green for the header */
-        }
+input {
+  width: 100%; /* Adjusted width for input fields */
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 4px;
+  color: #333; /* Dark text color for input */
+  background-color: #666; /* Darker input background color */
+}
 
-        label {
-            display: block;
-            margin: 10px 0;
-            color: #ccc; /* Light gray for labels */
-        }
+button {
+  background: url('images/calculators/jump_calculate.gif') no-repeat; /* Set the background image */
+  background-size: cover; /* Constrain the background image to the button size */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
 
-        input {
-            width: calc(100% - 20px); /* Adjusted width for input fields */
-            padding: 8px;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-            border: 1px solid #555; /* Darker border color */
-            border-radius: 4px;
-            color: #333; /* Dark text color for input */
-            background-color: #666; /* Darker input background color */
-        }
+input::placeholder {
+  color: #aaaaaa; /* Replace with your desired color code */
+}
 
-        button {
-            background: url('images/calculators/jump_calculate.gif') no-repeat; /* Set the background image */
-            background-size: cover; /* Constrain the background image to the button size */
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            width: px;
-        }
+button:hover {
+  background-color: #004d00; /* Darker green on hover */
+}
 
-        input::placeholder {
-            color: #aaaaaa; /* Replace with your desired color code */
-        }
+#totalEarnings {
+  font-size: 18px;
+  color: #d3c332; /* Teal color for total earnings */
+  margin-top: 20px;
+}
 
-        button:hover {
-            background-color: #004d00; /* Darker green on hover */
-        }
+/* Media query for desktop screens */
+@media (min-width: 600px) {
+  .calculator {
+    max-width: 400px; /* Set a maximum width for the calculator on larger screens */
+    width: 70%;
+    margin: 50px;
+    margin-top: 20px; /* Add margin-top to create space above the calculator */
+  }
+}
 
-        #totalEarnings {
-            font-size: 18px;
-            color: #d3c332; /* Teal color for total earnings */
-            margin-top: 20px;
-        }
+#home {
+  text-align: center;
+  margin-top: 20px;
+}
 
-        /* Media query for desktop screens */
-        @media (min-width: 600px) {
-            .calculator {
-                max-width: 400px; /* Set a maximum width for the calculator on larger screens */
-                margin-top: 20px; /* Add margin-top to create space above the calculator */
-            }
-        }
-
-        #home {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        #homeButton {
-            background: url('images/return.svg') center center no-repeat;
-            background-size: contain;
-            width: 50px;
-            height: 50px;
-            border: none;
-            cursor: pointer;
-        }
+#homeButton {
+  background: url('images/return.svg') center center no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
     </style>
 </head>
 <body>
